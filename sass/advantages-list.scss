@@ -1,0 +1,27 @@
+.advantages-list {
+  display: none;
+  margin: rem(19px) 0;
+  &__item {
+    padding-left: rem(22px);
+    position: relative;
+    font-size: 0.9375em;
+    line-height: rem(26px);
+    color: $gray-blue;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      background-color: $background;
+      border-radius: 50%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(12px);
+    }
+  }
+}

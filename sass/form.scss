@@ -1,0 +1,22 @@
+.form {
+  &__input {
+    margin-bottom: rem(20px);
+    padding: 0.9375em;
+    max-width: rem(464px);
+    width: 100%;
+    border: 2px solid $gray-light;
+
+    &--good {
+      border-color: $grey;
+    }
+
+    &--error {
+      border-color: $red;
+    }
+
+    &:focus {
+      border-color: $background;
+      transition: 0.2s;
+    }
+  }
+}
